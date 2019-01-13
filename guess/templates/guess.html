@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_block %}
+<title>Guess Game</title>
+<link rel="stylesheet" href="{% static 'guess/css/guess_style.css' %}">
+{% endblock %}
+
+{% block body_block %}
+
+<div id="welcome" class="container">
+  <h2>Welcome to Number Guess Game!</h2>
+  <p>The purpose of this game is to guess the number that picked by the computer.</p>
+  <p>For each guess of yours, the computer gives you a feedback, so that you can modify your guess in the next round.</p>
+  <p>You should interpret the feedbacks as follows:</p>
+  <ul>
+    <li><p><strong>+ x</strong> : x number of digits are among digits of the true number and <u>in the correct location</u>.</p></li>
+    <li><p><strong>- x</strong> : x number of digits are among digits of the true number but <u>not in the correct location</u>.</p></li>
+  </ul>
+</div>
+<hr />
+<div class="container">
+  <table>
+    <tr>
+      <div>
+        <table>
+          <td>
+            <p><strong>Choose the number of digits you want to play with!</strong><br>
+              <strong>Press START to initialize the game!</strong><br>
+              <strong>Press GUESS to make a guess on the true number!</strong></p>
+            </td>
+            <td>
+              <button id="decrease" type="button" class="btn btn-danger">-</button>
+              <input id="number_of_digits" type="button" class="btn btn-primary btn-lg" value="4" disabled>
+              <button id="increase" type="button" class="btn btn-success">+</button>
+              <button id="start" type="button" class="btn btn-primary btn-lg" name="button">START</button>
+              <button id="guess" type="button" class="btn btn-primary btn-lg" name="button">GUESS</button>
+            </td>
+          </table>
+        </div>
+      </tr>
+      <tr>
+        <hr />
+        <div id="logs" class="container">
+
+        </div>
+      </tr>
+      <hr />
+    </table>
+  </div>
+
+  {% endblock %}
+
+  {% block script_block %}
+  <script src="{% static 'guess/js/guess_script.js' %}"> </script>
+  {% endblock %}

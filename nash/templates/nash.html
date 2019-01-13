@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_block %}
+<title>Nash Game</title>
+<link rel="stylesheet" href="{% static 'nash/css/nash_style.css' %}">
+{% endblock %}
+
+{% block body_block %}
+
+<div class="jumbotron">
+  <input id="restart" class="btn btn-primary" type="button" value="RESTART">
+</div>
+
+<div class="container">
+
+  <table>
+    <tr>
+      <td></td>
+      <td colspan="2"><input id="strategyB" class="btn btn-default" type="button" value="Strategy 1"></td>
+      <td colspan="2"><input id="strategyB" class="btn btn-default" type="button" value="Strategy 2"></td>
+    </tr>
+    <tr>
+      <td><input id="strategyA" class="btn btn-default" type="button" value="Strategy 1"></td>
+      <div id="row">
+        <td><input class="btn btn-default" type="button" name="payoff" value="0"></td>
+        <td><input class="btn btn-primary" type="button" name="payoff" value="0"></td>
+        <td><input class="btn btn-default" type="button" name="payoff" value="0"></td>
+        <td><input class="btn btn-primary" type="button" name="payoff" value="0"></td>
+      </div>
+    </tr>
+    <tr>
+      <td><input  id="strategyA" class="btn btn-default" type="button" value="Strategy 2"></td>
+      <div id="row">
+        <td><input class="btn btn-default" type="button" name="payoff" value="0"></td>
+        <td><input class="btn btn-primary" type="button" name="payoff" value="0"></td>
+        <td><input class="btn btn-default" type="button" name="payoff" value="0"></td>
+        <td><input class="btn btn-primary" type="button" name="payoff" value="0"></td>
+      </div>
+    </tr>
+  </table>
+
+</div>
+
+{% endblock %}
+
+{% block script_block %}
+<script src="{% static 'nash/js/nash_script.js' %}"></script>
+{% endblock %}

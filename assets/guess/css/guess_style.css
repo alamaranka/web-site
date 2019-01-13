@@ -1,0 +1,43 @@
+#welcome{
+  font-family: monospace;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding-top: 10px;
+  /* border: 3px solid lightpink; */
+  line-height: 3px;
+}
+
+.container{
+  font-family: monospace;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding-top: 10px;
+  /* border: 3px solid lightblue; */
+  /* line-height: 3px; */
+}
+
+td{
+  padding: 0px 50px 0px 0px;
+}
+
+p{
+  text-align: justify;
+}
+
+strong{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#start{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#logs{
+  font-family: cursive;
+  padding-top: 10px;
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}

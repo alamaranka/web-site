@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title_block %}
+<title>Home</title>
+{% endblock %}
+
+{% block body_block %}
+
+  <div class="container">
+    <h1>Welcome to Home Page!</h1>
+
+    <table>
+      <td>
+        <img src="{% static "images/my_pic.jpg" %}" alt="No picture to show!" width="150", height="150">
+      </td>
+      <td>
+        <p>Pursuing PhD degree on Operations Research at University at Buffalo.
+          As a researcher, 5+ years of modeling and optimization experience.
+          Involved in government-supported security projects and published
+          academic papers that focus risk management. Completed 3 Machine Learning
+          projects in which large and unbalanced datasets investigated.
+          3+ years of experience with supervising teams.</p>
+      </td>
+    </table>
+  </div>
+
+{% endblock %}
