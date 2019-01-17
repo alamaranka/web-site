@@ -11,7 +11,7 @@ class PatrolFinder:
         self.max_move = max_move
         self.grid_values = grid_values
 
-    def patrol(self):gi
+    def patrol(self):
         route = []
         # data
         self.grid_values = np.tile(self.grid_values.transpose(), (1, self.max_move))

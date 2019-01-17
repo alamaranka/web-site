@@ -1,12 +1,12 @@
-from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.http import HttpResponse
 from .scripts.solve_patrol import PatrolFinder
 import numpy as np
 
-# Create your views here.
+
 class PatrolView(TemplateView):
-    template_name  = 'patrol.html'
+    template_name = 'patrol.html'
+
 
 def patrol_route(request):
     number_of_grid = int(request.GET['number_of_grid'])
@@ -16,6 +16,7 @@ def patrol_route(request):
     patrol_finder = PatrolFinder(number_of_grid, max_move, grid_values)
     solution = patrol_finder.patrol()
     return HttpResponse(solution)
+
 
 def str_to_np_array(string):
     np_arr = np.array([])
