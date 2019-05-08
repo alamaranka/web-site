@@ -20,7 +20,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%)0$v^1iz0sjk8xl^4(ftjg1j$3=_%vm(gqp7=#^x7znw*m75&'
+SECRET_KEY = '***'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
@@ -99,11 +99,11 @@ WSGI_APPLICATION = 'web_site.wsgi.application'
 #     # the unix socket at /cloudsql/<your-cloudsql-connection string>
 #     DATABASES = {
 #         'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             'HOST': '/cloudsql/alamarankawebsite:europe_west3:website-instance',
-#             'USER': 'alamaranka',
-#             'PASSWORD': 'Samaritan.29',
-#             'NAME': 'main_db',
+#             'ENGINE': '***',
+#             'HOST': '***',
+#             'USER': '***',
+#             'PASSWORD': '***',
+#             'NAME': '***',
 #         }
 #     }
 # else:
@@ -115,12 +115,12 @@ WSGI_APPLICATION = 'web_site.wsgi.application'
 #     # See https://cloud.google.com/sql/docs/mysql-connect-proxy
 #     DATABASES = {
 #         'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             'HOST': '127.0.0.1',
-#             'PORT': '3306',
-#             'NAME': 'main_db',
-#             'USER': 'alamaranka',
-#             'PASSWORD': 'Samaritan.29',
+#             'ENGINE': '***',
+#             'HOST': '***',
+#             'PORT': '***',
+#             'NAME': '***',
+#             'USER': '***',
+#             'PASSWORD': '***',
 #         }
 # }
 
